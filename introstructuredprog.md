@@ -29,3 +29,27 @@ A programming paradigm  is a style, or general approach to writing code.
 * [**Interpreted programming:**](https://www.radford.edu/~nokie/classes/380/Chap1-Lang-Impl.html) It directly excecute source language programs, it fetch source programm, decode it and execute it, the interpreter excecutes while program executing.
 
 * [**Compiled programming:**](https://www.radford.edu/~nokie/classes/380/Chap1-Lang-Impl.html) It translate program from source language to target language, it program in target language is then executed, the compiler finished before program executed.
+
+# [Version control](https://www.perforce.com/blog/vcs/what-is-version-control)
+
+Version control is software that allows you to manage changes to files over time. You can use version control tools to version code, binary files, and digital assets. 
+
+A distributed version control system ([DVCS](https://www.perforce.com/blog/vcs/what-dvcs-anyway)) is a type of version control where the complete codebase — including its full version history — is mirrored on every developer's computer. It's abbreviated DVCS. Git is a distributed version control system.
+
+Advantages:
+* Branching and merging can happen automatically and quickly
+* Developers have the ability to work offline
+* Multiple copies of the software eliminate reliance on a single backup
+
+![imagen 1][Logo]
+
+[Logo]: https://miro.medium.com/max/3396/1*CEyiDu_mQ5u9NI0Fr2pSdA.png 
+
+It is important that the version control software has the following characteristics:
+
+* Concurrent Development
+* Automation
+* Team collaboration
+* Tracked changes
+* High availability
+
