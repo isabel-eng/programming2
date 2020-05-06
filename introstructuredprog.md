@@ -1,3 +1,4 @@
+[Juan Manuel Balanzar Vega](https://github.com/SrGitQ/Programming2/blob/master/introstructuredprog.md) & [Isabel Cámara Montalvo](https://github.com/isabel-eng/programming2/blob/master/introstructuredprog.md)
 # **Clasification of programming paradigms**
 ## [Programming paradigms](https://digitalfellows.commons.gc.cuny.edu/2018/03/12/an-introduction-to-programming-paradigms/)
 A programming paradigm  is a style, or general approach to writing code.
@@ -16,9 +17,8 @@ A programming paradigm  is a style, or general approach to writing code.
 
 * [**Imperative:**](http://www.eecs.ucf.edu/~leavens/ComS541Fall97/hw-pages/paradigms/major.html) Assumes that the computer can maintain through environments of variables any changes in a computation process.
 
-    * **Von Neumann**:
-
-
+    * [**Von Neumann:**](https://www.sciencedirect.com/topics/computer-science/von-neumann-architecture)
+All the instructions previously read by a compiler are placed in instructions that the processor is going to execute at a certain moment, hence its name, assembly language
     * [**Interpreted (scripting):**](https://web.stanford.edu/~ouster/cgi-bin/papers/scripting.pdf)
  Assumes that a collection of useful components already exist in other languages. They are intended not for writing applications from scratch but rather for combining components.
     * [**Object-oriented:**](http://www.eecs.ucf.edu/~leavens/ComS541Fall97/hw-pages/paradigms/major.html#object) Real-world objects are each viewed as seperate entities having their own state which is modified only by built in procedures, called methods.
@@ -29,6 +29,144 @@ A programming paradigm  is a style, or general approach to writing code.
 * [**Interpreted programming:**](https://www.radford.edu/~nokie/classes/380/Chap1-Lang-Impl.html) It directly excecute source language programs, it fetch source programm, decode it and execute it, the interpreter excecutes while program executing.
 
 * [**Compiled programming:**](https://www.radford.edu/~nokie/classes/380/Chap1-Lang-Impl.html) It translate program from source language to target language, it program in target language is then executed, the compiler finished before program executed.
+
+# **Data Representation and Operators**
+
+## [Programming languages](https://www.itu.dk/people/sestoft/plc/)
+A programming language is an artificial language too defined for easy understanding and this allows anyone who respects its rules to use it since it is too defined it can be read by computers, it has to be translated into machine language to carry out written instructions in a file using a compiler or simply be executed.
+## [Sequential algorithms](http://www.cs.cmu.edu/afs/cs/academic/class/15210-f13/www/lectures/summary.pdf)
+Basically a sequential algorithm refers to a program that has a certain number of processes that cannot be executed all at once for the simple fact that the next task depends entirely on the return of the previous one, causing the entire process to be completed in one order.
+
+## [Source code](https://en.wikipedia.org/wiki/Source_code)
+It refers to the scripts where the code of a certain program is found in its raw form, that is, it is not yet compiled (if it is low-level), and it can be read or written. A source code contains all the written instructions of a program to be later translated into machine language and executed.
+
+## Describe concept and characteristics of data representatoin in structured programming language:
+To manipulate information from wherever through the computer is necessary to transform this information in data, to the
+computer can do calculus with it and through an algorithm or complete process return a value or new information, this is why
+exists ways to classifying this data in different forms and do the process more efficient, strings to manipulate text, float
+to decimals, integers to whole numbers inclusive it could be work as a character.
+
+* [**Identifiers:**](https://www.programiz.com/c-programming/c-keywords-identifier)
+An identifier is an object created during the execution of the program and it is useful to the process because it is unique and it can take certain properties, the most important property is the name because basically, an identifier is a reference name to call specific variable, function, structure, object, method, etc.
+
+```javascript
+    var myVariable = 2;
+```
+
+* [**Variables:**](https://www.programiz.com/c-programming/c-variables-constants)
+It represents a value specific saved in memory space, represented by an identifier, direction, type, etc. The variables are an important part of a programming language because it could be created during the process of the program or not and change the original value according to the objective or course of the program. To create a variable exists keywords to mention what type of the variable would be created and the following would be to put a name, this process is called a declaration.
+
+| Types           |
+| --------------- |
+| Integers        |
+| Float           |
+| Characters      |
+| Boolean         |
+| Scape sequences |
+| String          |
+
+* [**Constants:**](https://www.programiz.com/c-programming/c-variables-constants)
+Constant is also a memory space, storing some value, but this value indifference to the variables, because once it is declared, it cannot change while the program is in execution unless finish.
+
+```javascript
+    const var myVariable = 2;
+```
+
+
+* [**Reserved Words:**](https://www.programiz.com/c-programming/c-keywords-identifier)
+As we mentioned, to create a new identifier to refer to some function, variable, etc. We need keywords to create with a specific purpose and the computer distinguishes what to do in each case, a great number of programming languages uses abbreviations to refers declarations of variable type, or some functions have already been created, these identifiers we cannot use and we have to be more specific with our identifier.
+
+| Reserved Words | to            |
+| -------------- | --------------|
+| **Int**        | Integers      |
+| **float**      | Float-point   |
+| **char**       | Characters    |
+| **#define**    | Constants     |
+| **break**      | break process |
+| **default**    | default value |
+
+* [**Types of data: primitives and composites (extended):**](https://dl.sumdu.edu.ua/textbooks/103395/597162/index.html)
+we can classify data in two, primitives and composites.
+in the first instance, primitives are all those data created with a simple declaration and initialized with a first value and just only case it couldn't change is a constant, for another hand, the composites come from a process, in other words, to create complex data we have to create or use a function created(depends on the language programming), to pass primitives data as parameters and obtain a return of these function, and this is our composite data. Another example of composites data is the Objects in the POO paradigm and the string in the structured paradigm.
+- 
+  - Memory space for each data type.
+
+| Primitives     | Boolean  | Char | Byte | Short | Int |  Long  | Float | Double |
+| -------------- | :-------:| :---:| :---:| :----:| :--:| :----: | :----:| ------:|
+| Space          |     1    |  16  |   8  |   16  |  32 |   64   |   32  |   64   |
+
+| Composites     |     Arrays     |  String |      register       |
+| -------------- | :------------: | :------:| :------------------:|
+| Space          |  n·space-type  |   n·16  | SIGMA(space-type·n) |
+- 
+  - Range of values of each data type.
+
+| Primitives     | Boolean  | Char | Byte | Short | Int |  Long  | Float | Double |
+| -------------- | :-------:| :---:| :---:| :----:| :--:| :----: | :----:| ------:|
+| Range          |     N.A.-N.A.    |  \u0000 - \uFFFF  |   ±128  |   ±32767 |  ±2147483647 |   ±9223372036855477580/8/7/   |   ±3.40282347E+38 - ±1.40239846E-45  |   ±1.79769313486231570E+308 - ±4.94065645841246544E-324   |
+
+| Composites     |     Arrays     |        String       |      register       |
+| -------------- | :------------: | :------------------:| :------------------:|
+| range          |   range-type   |  n·\u0000 - \uFFFF  |      range-type     |
+
+* [**Data type conversion:**](https://www.tutorialspoint.com/csharp/csharp_type_conversion.htm)
+Once initiated a variable with its type of data, is impossible to change this with a simple new declaration, to this exists special functions in the majority of languages programming,  this allows transform a variable to another type, for example:
+```C
+      char charNumber = '1';//char = 49
+      int intNumber = atoi(charNumber);//if (*) is 49 is equal to 1
+```
+
+
+
+
+
+
+## [Operators of structured programming language](https://www.programiz.com/c-programming/c-operators)
+
+|         |*Conditional*|        |
+| -------- | ----------- | ------- |
+| Operator | Description | Example |
+|   **?:**     | It qualifies if an expression is true or false and based on this to return one of the following returns | 3 > 4? "True" : "False" FALSE |
+
+|          | *Logical* |         |
+| -------- | ----------- | ------- |
+| Operator | Description | Example |
+|    **&&**    | It returns True if both or more conditions are met if one is False all conditional is False | 4 > 3 && 5 > 4 TRUE |
+| [OR](https://es.wikipedia.org/wiki/Ii#/media/Archivo:Roadsign_of_Ii_municipality_Finland.jpg) | If any conditional is met, all conditional is True | 2 > 3 [OR](https://es.wikipedia.org/wiki/Ii#/media/Archivo:Roadsign_of_Ii_municipality_Finland.jpg) 5 > 4 TRUE |
+|    **!**     | In the case where all conditionals are False, it is True and upside | 2 != 2 ! 3 == 4 TRUE |
+
+|         |*Relationship*|       |
+| -------- | ---------- | ------- |
+| Operator | Description | Example |
+|    **==**    | If A is equal to B is True | A == B False |
+|    **<**     | if A is less than B is True | 3 < 5 TRUE |
+|    **>**     | If A is bigger than B is True | 3 > 5 FALSE |
+|    **>=**    | if A is less or equal to B is True | 6 >= 4 TRUE |
+|    **<=**    | If A is bigger or equal to B is True | 2 <= 2 TRUE |
+|    **!=**    | If A is different from B is True | 3 != 3 FALSE |
+
+
+## [Basic functions of input-output (I/O) in structured programming language](https://www.programiz.com/c-programming/c-input-output)
+The program needs to manipulate certain information to work in the correct form and dynamic, to this, the majority of the programming languages are able to read and write information in different environments, the most commons are in a terminal interface, documents, a window, etc. this is through some functions specifics for each case, for example, an output terminal interface is the function print(" "), where the only parameter is a string of different objects, all function of Input or Output depends on the purpose and we have to work in different terms.
+- Input 
+  - devices
+  - documents
+  - parameters
+  - events
+- Output
+  - devices
+  - documents
+  - returns
+ getchar, putchar, puts, scanf and printf. The first two functions, getchar and putchar, are used to transfer single characters. The next function puts is used to output strings, and the last two functions, scanf and printf, permit the transfe
+
+| Some examples in C | ret  |
+|--------------------|------|
+|    getchar         | <'a' |
+|    putchar         | >'a' |
+|    puts            |  >>  |
+|    scanf           | <" " |
+|    printf          | >" " |
+
 
 # [Version control](https://www.perforce.com/blog/vcs/what-is-version-control)
 
@@ -52,4 +190,3 @@ It is important that the version control software has the following characterist
 * Team collaboration
 * Tracked changes
 * High availability
-
