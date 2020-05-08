@@ -40,6 +40,9 @@ Basically a sequential algorithm refers to a program that has a certain number o
 ## [Source code](https://en.wikipedia.org/wiki/Source_code)
 It refers to the scripts where the code of a certain program is found in its raw form, that is, it is not yet compiled (if it is low-level), and it can be read or written. A source code contains all the written instructions of a program to be later translated into machine language and executed.
 
+## [Spaghetti code](https://sourcemaking.com/antipatterns/spaghetti-code)
+Spaghetti Code appears as a program or system that contains very little software structure. Coding and progressive extensions compromise the software structure to such an extent that the structure lacks clarity, even to the original developer, if he or she is away from the software for any length of time.
+
 ## Describe concept and characteristics of data representatoin in structured programming language:
 To manipulate information from wherever through the computer is necessary to transform this information in data, to the
 computer can do calculus with it and through an algorithm or complete process return a value or new information, this is why
@@ -190,3 +193,15 @@ It is important that the version control software has the following characterist
 * Team collaboration
 * Tracked changes
 * High availability
+
+### Version control systems
+
+* [**Beanstalk:**](https://aws.amazon.com/es/elasticbeanstalk/) It is an easy-to-use service for deploying and scaling web applications and services developed with Java, . NET, PHP, Node. js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
+
+* [**PerForce:**](https://hackernoon.com/top-10-version-control-systems-4d314cf7adea) Delivers the version control capabilities through its HelixCore. The HelixCore comes with a single platform for seamless team collaboration, and support for both centralized and distributed development workflows.
+
+* [**Apache Subversion:**](https://subversion.apache.org/) It is a software versioning and revision control system distributed as open source under the Apache License.
+
+* [**AWS CodeCommit:**](https://aws.amazon.com/es/codecommit/) It is a fully-managed source control service that hosts secure Git-based repositories.
+
+* [**Microsoft Team Foundation Server**](https://hackernoon.com/top-10-version-control-systems-4d314cf7adea) It is an enterprise-grade tool to manage source code and other services that need versioning. It can keep track of work items to find defects, requirements, and scenarios in a project.
