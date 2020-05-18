@@ -1,38 +1,71 @@
-[Juan Manuel Balanzar Vega](https://github.com/SrGitQ/Programming2/blob/master/introstructuredprog.md) & [Isabel Cámara Montalvo](https://github.com/isabel-eng/programming2/blob/master/introstructuredprog.md)
+[Juan Manuel Balanzar Vega](https://github.com/SrGitQ/Programming2/blob/master/CONDS_LOOPS.md) & [Isabel Cámara Montalvo](https://github.com/isabel-eng/programming2/blob/master/CONDS_LOOPS.md)
 ## [Operators of structured programming language](https://www.programiz.com/c-programming/c-operators)
 
 
 The conditionals are an important part of the programming oriented to structures, since they allow to make decisions according to the restrictions that you want to qualify, to return a process according to the condition, within the programming there are reserved words to start the type of condition to be performed
 ## conditional
-* [**Simple-conditional:**] Simple conditions return a boolean value just like all others, but only attribute to a condition like:
+* [**Simple conditional:**](https://thestempedia.com/tutorials/conditional-programming/) check whether a programmer-specified Boolean condition is true or false. They make it possible to test a variable against a value/compare a variable with another variable and make the program act in one way if the condition is met, and another if it isn’t. 
 ```C
-    if
+    if (i >= R){
+        /* code */
+    }
 ```
-* [**Double-conditional:**] It means that two cases are being qualified that are possible and it depends on the relationship operators, occurred if both are fulfilled or only one is necessary for the whole condition to be true
+* **Double-conditional:** It means that two cases are being qualified that are possible and it depends on the relationship operators, occurred if both are fulfilled or only one is necessary for the whole condition to be true
 ```C
-    if
+    if (i >= R && i > 3){
+        /* code */
+    }
 ```
-* [**Multiple-conditional:**] It is very similar to the previous one but here it attributes more than two conditions and in many occasions these are made by a function to which the parameters of the multiple condition are given and return a Boolean value like 0 and 1 or TRUE FALSE. In addition there is a layered structure to qualify more than one specific case of a given variable.
+* **Multiple-conditional:** It is very similar to the previous one but here it attributes more than two conditions and in many occasions these are made by a function to which the parameters of the multiple condition are given and return a Boolean value like 0 and 1 or TRUE FALSE. In addition there is a layered structure to qualify more than one specific case of a given variable.
 ```C
-    if
+    if ((i >= R && i > 3) || (i < 2)){
+        /* code */
+    }
+
+    switch (i){
+    case 1:
+        /* code */
+        break;
+    
+    default:
+        break;
+    }
 ```
-* [**Nested-conditional:**] We can nest more than one conditional so that a case can be dynamically qualified in its different stages or changes.
+* **Nested-conditional:** We can nest more than one conditional so that a case can be dynamically qualified in its different stages or changes.
 ```C
-    if
+    if (i >= R && i > 3){
+        /* code */
+    }else if((i < 2)){
+        /* code */
+    }else{
+        /* code */
+    }
 ```
 
 ## special reserved words (Break, continue) and concept of infinite loop
-*[**Break:**] If a condition is successful we can end the process in which said condition is nested, and continue with the next process
+* **Break:** The break statement ends the loop immediately when it is encountered.
+![How break works](https://cdn.programiz.com/sites/tutorial2program/files/c-break-statement-works.jpg)
 ```C
-    if
+    for (i = 0; i < count; i++){
+        if (i == 3){
+            break;
+        }
+    }
 ```
-* [**Continue:**] If a condition is met within a loop and incorporates this instruction, it will jump to the next value in that loop
+* **Continue:** The continue statement skips the current iteration of the loop and continues with the next iteration.
+![how continue works](https://cdn.programiz.com/sites/tutorial2program/files/c-continue-statement-works.jpg)
 ```C
-    if
+    for (i = 0; i < count; i++){
+        if (i == 3){
+            continue;
+        }
+    }
 ```
-* [**Infinite-loop:**] This concept is important to keep in mind since many times it can be useful in certain cases, but many times this is not given by the intention of the programmer and it is called infinite loop to that cycle that does not have a condition that determines the end of this loop
+* **Infinite-loop:** This concept is important to keep in mind since many times it can be useful in certain cases, but many times this is not given by the intention of the programmer and it is called infinite loop to that cycle that does not have a condition that determines the end of this loop
 ```C
-    if
+    for (i = -1; i < 0; i--){
+        printf("%d\n", aux);
+    }
 ```
 
 
@@ -59,15 +92,32 @@ The conditionals are an important part of the programming oriented to structures
 |    **!=**    | If A is different from B is True | 3 != 3 FALSE |
 
 ## Loops
-* [**For:**] The for cycle is useful to carry out a process in a determined interval, it contains 3 parameters, the first is the variable that indicates from which value it will start working, the next parameter is the condition that indicates until At what moment this process will be stopped, and the third parameter is the change that the variable receives each time the process is executed.
+* [**For:**](https://www.programiz.com/c-programming/c-for-loop) The initialization statement is executed only once.
+Then, the test expression is evaluated. If the test expression is evaluated to false, the for loop is terminated.
+However, if the test expression is evaluated to true, statements inside the body of for loop are executed, and the update expression is updated.
+Again the test expression is evaluated.
+This process goes on until the test expression is false. When the test expression is false, the loop terminates.
 ```C
-    if
+    for (i = 0; i < count; i++){
+        printf("%d\n", aux);
+    }
 ```
-* [**While:**] This loop verifies a condition as a parameter and performs a process while that condition is true, at the moment that condition is false the process will not be executed.
+* [**While:**](https://www.programiz.com/c-programming/c-do-while-loops) The while loop evaluates the test expression inside the parenthesis ().
+If the test expression is true, statements inside the body of while loop are executed. Then, the test expression is evaluated again.
+The process goes on until the test expression is evaluated to false.
+If the test expression is false, the loop terminates (ends).
 ```C
-    if
+    while (i > R){
+        if (i == 8){
+            i = 40;
+        }
+    }
 ```
-* [**do-While:**] It has the same goal as the while loop, but unlike that structure, it will be performed at least once before the conditional is executed and returns false
+* [**Do-while:**](https://www.programiz.com/c-programming/c-do-while-loops) The do..while loop is similar to the while loop with one important difference. The body of do-while loop is executed at least once. Only then, the test expression is evaluated.
 ```C
-    if
+    do{
+        if (i == 8){
+            i = 40;
+        }
+    } while (i > R);
 ```
