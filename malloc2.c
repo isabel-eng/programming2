@@ -8,36 +8,44 @@ puedan ser accedidos mediante dos subíndices (array[i][j]).
 5º. Eliminará de la memoria todo el array, antes de terminar el programa.
 */
 #include <stdio.h>
+
 #include <stdlib.h>
 
-int main()
-{
- float **array;
- int f=0,c=0,i,j;
+int main() {
+    float ** array;
+    int f = 0, c = 0, i, j;
 
- printf("number of rows: \n"); scanf("%d", &f); 
- printf("number of columns: \n"); scanf("%d", &c); 
+    printf("number of rows: \n");
+    scanf("%d", & f);
+    printf("number of columns: \n");
+    scanf("%d", & c);
 
- // values for the array
- array = (float **)malloc(f * sizeof(float *));
- if (array==NULL){ 
-     printf("the memory wasn't allocated. Try again."); 
-     }else{
- for (i=0; i<f; i++)
- { array[i] = (float *)malloc(c * sizeof(float));
- if (array[i]==NULL) { printf("the memory wasn't allocated. Try again."); f=i; 
- }else{
- // take the values from the user
- for (i=0; i<f; i++)
- for (j=0; j<c; j++)
- { printf("value for array[%d][%d]=", i, j); scanf("%f", &array[i][j]); }
- // print the array
- printf("here is your array:\n");
- for (i=0; i<f; i++)
- { for (j=0; j<c; j++) printf("%g\t", array[i][j]);
- printf("\n");
- }
-}
-}
-}
+    // values for the array
+    array = (float ** ) malloc(f * sizeof(float * ));
+    if (array == NULL) {
+        printf("the memory wasn't allocated. Try again.");
+    }
+    for (i = 0; i < f; i++) {
+        array[i] = (float * ) malloc(c * sizeof(float));
+        if (array[i] == NULL) {
+            printf("the memory wasn't allocated. Try again.");
+            f = i;
+        }
+    }
+    // take the values from the user
+    for (i = 0; i < f; i++){
+        for (j = 0; j < c; j++) {
+            printf("value for array[%d][%d]=", i, j);
+            scanf("%f", & array[i][j]);
+        }
+    }
+    // print the array
+    printf("here is your array:\n");
+    for (i = 0; i < f; i++) {
+        for (j = 0; j < c; j++) printf("%g\t", array[i][j]);
+        printf("\n");
+    }
+        // erase the array
+        for (i = 0; i < f; i++) free(array[i]);
+        free(array);
 }
