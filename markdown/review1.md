@@ -75,13 +75,13 @@
 
 ## **Python programming**
 
-input: takes a string from the user.
-in: defines where information should be taken for the code.
-with: runs the code using certain file.
-any: selects everithing in a range.
-range: defines a range of numbers.
-break: ends an action in the code.
-list: creates a list of objects.
+ * input: takes a string from the user.
+ * in: defines where information should be taken for the code.
+ * with: runs the code using certain file.
+ * any: selects everithing in a range.
+ * range: defines a range of numbers.
+ * break: ends an action in the code.
+ * list: creates a list of objects.
 
 ### Operators
  * and: and
