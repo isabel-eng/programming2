@@ -1,0 +1,10 @@
+import numpy as np
+
+vector1 = np.array([2,6,7])
+vector2 = np.array([5,3,8])
+
+print ("addition of the elements in vector1:", (np.sum(vector1)))
+print ("\naddition of the elements in vector2:", (np.sum(vector2)))
+print ("\nthe addition of vector1 + vector2:", vector1+vector2 )
+print ("\nThe subtraction of vector1 - vector2:", vector1-vector2 )
+print ("\nThe subtraction of vector2 - vector1:", vector2-vector1 )
